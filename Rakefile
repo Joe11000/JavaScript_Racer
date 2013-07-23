@@ -9,6 +9,8 @@ require 'active_support/core_ext'
 
 namespace :generate do
   desc "Create an empty model in app/models, e.g., rake generate:model NAME=User"
+
+
   task :model do
     unless ENV.has_key?('NAME')
       raise "Must specificy model name, e.g., rake generate:model NAME=User"
@@ -86,6 +88,7 @@ namespace :generate do
 end
 
 namespace :db do
+
   desc "Create the database at #{DB_NAME}"
   task :create do
     puts "Creating database #{DB_NAME} if it doesn't exist..."

@@ -16,6 +16,7 @@ gem 'activerecord'
 gem 'rake'
 
 gem 'shotgun'
+gem 'better_errors'
 
 group :test do
   gem 'faker'

@@ -4,5 +4,9 @@ get '/' do
 end
 
 get '/results' do
-  
+  erb :history
+end
+
+get '/race' do
+  erb :js_racer
 end
