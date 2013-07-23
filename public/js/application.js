@@ -1,7 +1,23 @@
-$(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
-
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+$(document).ready(function() 
+{
+  $(this).keyup(function(event)
+  {
+    // if p pressed
+    if (event.keyCode == 80) 
+    {
+      $('#a').find('.active').removeClass('active').next().addClass('active');
+    }
+    // if q pressed
+    else if (event.keyCode == 81) 
+    {
+      $('#b').find('.active').removeClass('active').next().addClass('active');
+    }
+    // if winner
+    if(($('#a li:last-child()').attr('class') == 'active') || ($('#b li:last-child()').attr('class') == 'active'))
+     {
+      alert($('li:last-child.active').parent().attr('id') + ' won!');
+      $(document).unbind('keyup');
+    }
+  });
 });
+
