@@ -1,23 +1,44 @@
 ul 
 {
   list-style-type: none;
+
 }
 
 li 
 {
-  height: 40px;
-  width:  40px;
-  border: 1px solid black;
+  height: 70px;
+  width:  70px;
   display:inline-block;
-}
-
-#b .active 
-{
-  background-color: black;
+  background-size: 70px 70px;
+  background-image:url('/img/Road.png');
   
+  margin:-5px;
 }
 
-#a .active
+li:last-child
 {
-  background-color:red;
+  background-image: url("/img/end_line.gif");
 }
+
+ul#playerA li.active
+{
+  /*background-color: blue;*/
+  background-image: url("/img/Donkie Kong.png");
+    height: 70px;
+  width:  70px;
+}
+
+ul#playerB li.active
+{
+  background-image: url("/img/Bowser.png");
+    height: 70px;
+  width:  70px;
+  /*background-color: red;*/
+}
+
+p
+{
+  margin:10px 0px 10px 25px;
+}
+
+

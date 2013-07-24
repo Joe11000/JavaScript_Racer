@@ -6,5 +6,6 @@ class CreatePlayersGames < ActiveRecord::Migration
     end
 
     add_index :games_players, [:game_id, :player_id], unique: true
+
   end
 end

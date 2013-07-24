@@ -1,4 +1,5 @@
 clear
 tput cup 15 35 
 echo "clean up your shit before you leave"
+say  "clean up your shit before you leave"
 tput cup 0 0

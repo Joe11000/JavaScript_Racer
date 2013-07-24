@@ -7,6 +7,7 @@ get '/results' do
   erb :history
 end
 
-get '/race' do
-  erb :js_racer
+post '/race' do
+  @players = params[:players]
+  erb :race
 end
