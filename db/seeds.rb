@@ -1,4 +1,4 @@
-'a'.upto('j') do |i|
+'a'.upto('d') do |i|
   Player.create(name: i, age: rand(11..40))
 end
 
@@ -7,7 +7,7 @@ b = Player.last
 
 p a ,b
 
-Games_player.new(player: [a,b])
+Race.new(player: [a,b])
 
 
 
